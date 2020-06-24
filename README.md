@@ -16,7 +16,7 @@ cannot be computed.
 
 # Installation
 
-To install you need the devtools package devtools. Then download and install:
+To install you need the devtools package. Then download and install:
 
 ``` r
 library(devtools)
@@ -37,4 +37,7 @@ Inbreeding can supply a vector with inbreeding levels for all individuals in the
 as before in the original pedigree package. The inbreeding levels are fractial numbers from 0-1, but in our plant pedigrees
 most are fully inbred (all founders, DH progeny or naturally inbred progeny), exceptions are when an F1 is uncluded (inbreeding 0)
 or for instance and F4 from single-seed descent (inbreeding 0.875). 
+
+A file with a small example with 6 individuals is supplied with the package: 3 founders (inbred), 1 F1 (not inbred), and 2 inbred
+(for instance DH) progeny. The following code demonstrates makeA() with inbreeding using this example:
 
